@@ -7,70 +7,56 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="3*"/>
-        </Grid.ColumnDefinitions>
-        
-        <Image Source="/Images/FonChat.jpg" Stretch="Fill" Grid.Column="1"/>
-        <Frame Height="Auto" Width="Auto" />
-        
-        <Grid Grid.Column="0">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition Height="4*"/>
-            </Grid.RowDefinitions>
-            <Image Source="/Images/PlanZ.jpg"  Stretch="Fill" Grid.Row="0"/>
-            <Button Height="50" Width="190" HorizontalAlignment="Left" Margin="5,0,0,0" Background="White" Foreground="White" VerticalAlignment="Center">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="10"/>
-                    </Style>
-                </Button.Resources>
-                <Grid HorizontalAlignment="Center" Width="167">
-                    <StackPanel Orientation="Horizontal">
-                        <Border  Height="40" Width="40" CornerRadius="30" BorderThickness="1" BorderBrush="Black">
-                            <Image Source="/Images/Icons/13.png" />
-                        </Border>
-                    </StackPanel>
-                    <TextBlock Text="LamaGlam" FontSize="20" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="45,0,0,0"/>
-                </Grid>
-            </Button>
-            <Grid Grid.Row="1">
-                <ScrollViewer>
-                    <ListBox>
-                        <Grid>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBox Height="25" Width="140" >
-                                    <TextBox.Resources>
-                                        <Style TargetType="{x:Type Border}">
-                                            <Setter Property="CornerRadius" Value="5"/>
-                                        </Style>
-                                    </TextBox.Resources>
-                                </TextBox>
-                                <Button Height="30" Background="White" BorderBrush="White">
-                                    <Image Source="/Images/Search.png" Height="30"/>
-                                </Button>
-                            </StackPanel>
-                        </Grid>
-                        <Button Height="50" Width="170" HorizontalAlignment="Left" Background="White" Foreground="White" >
+        <Image Source="C:\Users\admin\Desktop\TextTango\TextTango\Images\Fon.jpg" Stretch="Fill"/>
+
+        <Border Background="White" Height="259" Width="518" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Width="313"  >
+                    <TextBlock Text="Login" FontSize="25" Margin="10,0,0,0"/>
+                    <TextBox Height="20" Width="300" HorizontalAlignment="Left" Margin="10,0,0,0" Name="Login">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="5" />
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                    <TextBlock Text="Password" FontSize="25" Margin="10,0,0,0" />
+                    <TextBox Height="20" Width="300" HorizontalAlignment="Left" Margin="10,0,0,0" Name="Password">
+                        <TextBox.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </TextBox.Resources>
+                    </TextBox>
+                    <Button Height="30" Width="150" Content="Login In" HorizontalAlignment="Center" Margin="0,10,0,0" Background="#B0C4DE" BorderBrush="#B0C4DE" Click="LoginIn_Clik">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <TextBlock Text="" Name="Text" FontSize="20" Foreground="Red" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <Border Background="#5A3D30" Height="273" Width="206">
+                    <StackPanel HorizontalAlignment="Center">
+                        <TextBlock FontSize="19" Foreground="White" FontWeight="Black" Margin="0,93,0,0" >Добро пожаловать!</TextBlock>
+                        <TextBlock Text="У вас нет аккаунта?" FontSize="15" Foreground="White" HorizontalAlignment="Center"/>
+                        <TextBlock Text=" Зарегестрируйтесь!" FontSize="15" Foreground="White" HorizontalAlignment="Center"/>
+                        <Button Height="30" Width="150" Content="Register now" HorizontalAlignment="Center" Margin="0,10,0,0" Background="#946B54" BorderBrush="#946B54" Click="RegisternNow_Click">
                             <Button.Resources>
                                 <Style TargetType="Border">
                                     <Setter Property="CornerRadius" Value="10"/>
                                 </Style>
                             </Button.Resources>
-                            <Grid HorizontalAlignment="Center" Width="167">
-                                <StackPanel Orientation="Horizontal">
-                                    <Border  Height="40" Width="40" CornerRadius="30" BorderThickness="1" BorderBrush="Black">
-                                        <Image Source="/Images/Icons/2.png" />
-                                    </Border>
-                                </StackPanel>
-                                <TextBlock Text="PinkRabbit" FontSize="20" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="45,0,0,0"/>
-                            </Grid>
                         </Button>
-                    </ListBox>
-                </ScrollViewer>
-            </Grid>
-        </Grid>
+                    </StackPanel>
+                </Border>
+
+            </StackPanel>
+
+        </Border>
+
+
     </Grid>
 </Window>

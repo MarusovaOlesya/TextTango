@@ -1,0 +1,80 @@
+﻿<Window x:Class="TextTango.Users"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextTango"
+        mc:Ignorable="d"
+        Title="Users" Height="450" Width="800">
+    <Grid>
+        <Image Source="/Images/FonUsers.jpg" Stretch="Fill"/>
+        <Border Background="White" HorizontalAlignment="Center" Width="424" Height="434" VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center" Width="216" VerticalAlignment="Center">
+                <Border  Height="101" Width="100" CornerRadius="50" BorderThickness="1" BorderBrush="Black">
+                    <Image Source="/Images/Icons/13.png" />
+                </Border>
+                <Button Content="Date" Height="20" Width="100" Background="#B0C4DE" BorderBrush="#B0C4DE" Margin="0,5,0,0">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBlock Text="LamaGlam" FontSize="20" Foreground="Black" HorizontalAlignment="Center"/>
+                <Button Content="Date" Height="20" Width="100" Background="#B0C4DE" BorderBrush="#B0C4DE" Margin="0,5,0,0">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBlock Text="Ламы повелевают миром!" FontSize="15" Foreground="Black" HorizontalAlignment="Center"/>
+                <Button Content="Date" Height="20" Width="100" Background="#B0C4DE" BorderBrush="#B0C4DE" Margin="0,5,0,0">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+
+                <Border Background="#DDEFEF" Height="121" Width="213" Margin="0,5,0,0" CornerRadius="10">
+                    <StackPanel>
+                        <TextBlock Text="Email:" Margin="10,0,0,0" FontSize="15"/>
+                        <TextBlock Text="LamaGlam00@gmail.com" Margin="10,0,0,0" FontSize="15"/>
+                        <TextBlock Text="Login:" Margin="10,0,0,0" FontSize="15"/>
+                        <TextBlock Text="LamaGlam" Margin="10,0,0,0" FontSize="15"/>
+                        <TextBlock Text="Password:" Margin="10,0,0,0" FontSize="15"/>
+                        <TextBlock Text="*******" Margin="10,0,0,0" FontSize="15"/>
+
+                    </StackPanel>
+                </Border>
+                <Button Content="Date" Height="20" Width="100" Background="#B0C4DE" BorderBrush="#B0C4DE" Margin="0,5,0,0">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Content="Delete account" Height="20" Width="100" Background="#E4563C" BorderBrush="#E4563C" Margin="0,5,0,0">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Content="Login out" Height="20" Width="100" Background="#E4563C" BorderBrush="#E4563C" Margin="5,5,0,0">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        
+    </Grid>
+</Window>

@@ -42,6 +42,37 @@
 
             <ScrollViewer Grid.Row="1">
                 <ListBox>
+                    <Border CornerRadius="10" Background="#C3F4F4" BorderBrush="#71B7B7" BorderThickness="2">
+                        <Grid>
+                            <StackPanel Margin="5,0,0,0">
+                                <Grid HorizontalAlignment="Center" Width="167">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Border  Height="30" Width="30" CornerRadius="30" BorderThickness="1" BorderBrush="Black" Background="White">
+                                            <Image Source="/Images/Icons/2.png" />
+                                        </Border>
+                                    </StackPanel>
+                                    <TextBlock Text="PinkRabbit" FontSize="15" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="45,0,0,0"/>
+                                </Grid>
+                                <TextBlock Text="Привет" FontSize="15"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <Border CornerRadius="10" Background="#C3F4F4" BorderBrush="#71B7B7" BorderThickness="2">
+                        <Grid>
+                            <StackPanel Margin="5,0,0,0">
+                                <Grid HorizontalAlignment="Center" Width="167">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Border  Height="30" Width="30" CornerRadius="30" BorderThickness="1" BorderBrush="Black" Background="White">
+                                            <Image Source="/Images/Icons/13.png" />
+                                        </Border>
+                                    </StackPanel>
+                                    <TextBlock Text="You" FontSize="15" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="45,0,0,0"/>
+                                </Grid>
+                                <TextBlock Text="Привет" FontSize="15"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+
                 </ListBox>
             </ScrollViewer>
         </Grid>
